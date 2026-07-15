@@ -4239,3 +4239,73 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# UGC Ads Section
+--------------------------------------------------------------*/
+.ugc .ugc-card {
+  background: var(--surface-color);
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.ugc .ugc-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.ugc .ugc-video-wrapper {
+  position: relative;
+  aspect-ratio: 9 / 16;
+  background: #000;
+}
+
+.ugc .ugc-video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ugc .ugc-meta {
+  padding: 18px 20px 20px;
+}
+
+.ugc .ugc-meta h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.ugc .ugc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ugc .ugc-tags .tag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/*--------------------------------------------------------------
+# Call To Action Section
+--------------------------------------------------------------*/
+#lets-work.portfolio.section {
+  padding-top: 0;
+}
+
+#lets-work .portfolio-bottom {
+  margin-top: 0;
+}
